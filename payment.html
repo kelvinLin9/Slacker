@@ -62,110 +62,100 @@
                 <!-- 陰影沒有中斷點 要去utility調整 -->
                 <form action="" class="p-lg-5 shadow-lg">
                     <h3 class="deco-line mb-3">選擇方案</h3>
-                    <div class="row row-cols-1 row-cols-lg-3 g-3 g-lg-4">
-                        <div class="col">
+                    <ul class="row row-cols-1 row-cols-lg-3 g-3 g-lg-4 mb-4 list-unstyled">
+                        <li class="col">
                             <!-- button或a都可以 -->
                             <button type="button" class="btn btn-outline-info w-100 btn-lg py-3 text-dark">
                                 小小搭懶蟲<br class="d-none d-lg-block">
                                 NT 298/月
                             </button>
-                        </div>
-                        <div class="col">
+                        </li>
+                        <li class="col">
                             <button type="button" class="btn btn-outline-info w-100 btn-lg py-3 text-dark">
                                 睡一整天囉<br class="d-none d-lg-block">
                                 NT 666/月
                             </button>
-                        </div>
-                        <div class="col">
+                        </li>
+                        <li class="col">
                             <button type="button" class="btn btn-outline-info w-100 btn-lg py-3 text-dark active btn-special">
                                 客製化方案<br class="d-none d-lg-block">
                                 客服詢價
                             </button>
-                        </div>
-                    </div>
-
+                        </li>
+                      </ul>
+                      <h3 class="deco-line mb-3">填寫資料</h3>
+                      <div class="row g-2">
+                            <div class="col-lg-6">
+                              <label for="validationCustom01" class="form-label">名字</label>
+                              <input type="text" class="form-control" id="validationCustom01"  required>
+                              <div class="valid-feedback">
+                                Looks good!
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <label for="validationCustom02" class="form-label">姓氏</label>
+                              <input type="text" class="form-control" id="validationCustom02" required>
+                              <div class="valid-feedback">
+                                Looks good!
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <label for="inputTel" class="form-label">手機號碼</label>
+                              <input type="tel" class="form-control" id="inputTel" placeholder="0910123456" required>
+                              </div>
+                            <div class="col-12">
+                              <label for="inputEmail" class="form-label">電子郵件</label>
+                              <input type="email" class="form-control" id="inputEmail" placeholder="1234@xmail.com" required>
+                            </div>
+                            <div class="col-12">
+                              <label for="inputAddress" class="form-label">住址</label>
+                              <input type="text" class="form-control" id="inputAddress" required>
+                            </div>
+                            <div class="col-12">
+                              <label for="inputTime" class="form-label">方便聯絡時間</label>
+                              <select class="form-select" aria-label="Default select example" id="inputTime">
+                                <option selected>8:00-12:00</option>
+                                <option value="1">12:00-16:00</option>
+                                <option value="2">16:00-20:00</option>
+                              </select>
+                            </div>
+                            <div class="col-12">
+                              <label for="addition" class="form-label">加購服務</label>
+                              <div class="d-flex" id="addition" >
+                                <div class="form-check mx-1 ">
+                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                                  <label class="form-check-label" for="flexCheckDefault1">
+                                    每週一清掃家裡+100
+                                  </label>
+                                </div>
+                                <div class="form-check mx-1">
+                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                                  <label class="form-check-label" for="flexCheckDefault2">
+                                    按摩+50
+                                  </label>
+                                </div>
+                                <div class="form-check mx-1">
+                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+                                  <label class="form-check-label" for="flexCheckDefault3">
+                                    聽你說話+150
+                                  </label>
+                                </div>
+                              </div>
+  
+                            </div>
+                            <div class="col-12">
+                              <label for="inputAddress2" class="form-label">留點訊息給我吧</label>
+                              <textarea type="text" class="form-control" id="inputAddress2" ></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-info w-100">送出表單</button>
+                            </div>
+                      </div>
                 </form>
             </div>
         </div>
     </section>
 
-    <section class="py-5 container ">
-        <div class="row justify-content-center ">
-            <div class="col-lg-8 " >
-                <!-- 陰影沒有中斷點 要去utility調整 -->
-                <form action="" class="p-lg-5 shadow-lg">
-                    <h3 class="deco-line mb-3">填寫資料</h3>
-                        <div class="row g-2">
-                          <div class="col-lg-6">
-                            <label for="validationCustom01" class="form-label">名字</label>
-                            <input type="text" class="form-control" id="validationCustom01"  required>
-                            <div class="valid-feedback">
-                              Looks good!
-                            </div>
-                          </div>
-                          <div class="col-lg-6">
-                            <label for="validationCustom02" class="form-label">姓氏</label>
-                            <input type="text" class="form-control" id="validationCustom02" required>
-                            <div class="valid-feedback">
-                              Looks good!
-                            </div>
-                          </div>
-                          <div class="col-12">
-                            <label for="inputTel" class="form-label">手機號碼</label>
-                            <input type="tel" class="form-control" id="inputTel" placeholder="0910123456" required>
-                            </div>
-                          <div class="col-12">
-                            <label for="inputEmail" class="form-label">電子郵件</label>
-                            <input type="email" class="form-control" id="inputEmail" placeholder="1234@xmail.com" required>
-                          </div>
-                          <div class="col-12">
-                            <label for="inputAddress" class="form-label">住址</label>
-                            <input type="text" class="form-control" id="inputAddress" required>
-                          </div>
-                          <div class="col-12">
-                            <label for="inputTime" class="form-label">方便聯絡時間</label>
-                            <select class="form-select" aria-label="Default select example" id="inputTime">
-                              <option selected>8:00-12:00</option>
-                              <option value="1">12:00-16:00</option>
-                              <option value="2">16:00-20:00</option>
-                            </select>
-                          </div>
-                          <div class="col-12">
-                            <label for="inputTime" class="form-label">加購服務</label>
-                            <div class="d-flex">
-                              <div class="form-check mx-1">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                  每週一清掃家裡+100
-                                </label>
-                              </div>
-                              <div class="form-check mx-1">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                  按摩+50
-                                </label>
-                              </div>
-                              <div class="form-check mx-1">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                  聽你說話+150
-                                </label>
-                              </div>
-                            </div>
-
-                          </div>
-                          <div class="col-12">
-                            <label for="inputAddress2" class="form-label">留點訊息給我吧</label>
-                            <textarea type="text" class="form-control" id="inputAddress2" ></textarea>
-                          </div>
-                          <div class="col-12">
-                              <button type="submit" class="btn btn-info w-100">送出表單</button>
-                          </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
 
     <footer class="bg-light mt-3">
       <div class="container col-10">
